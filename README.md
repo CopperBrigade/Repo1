@@ -141,9 +141,9 @@ containing execution results and logging information.
     ├── logs
     │   ├── error.log
     │   └── run.log
-    │   └── timing_ALLSOL.json
+    │   └── timing_ELOGD.json
     └── raw
-        └── redash_elogd_khwhswb4
+        └── redash_elogd.csv.gz
 ```
 
 This table summarizes output artifacts.
@@ -155,6 +155,7 @@ This table summarizes output artifacts.
 | `elogd_events.csv` | _existing couchbase and new rif data, with entries categorized by event_ | 
 | `./adme/elogd.csv`  | _final adme data file with new RIF results_ |
 | `./adme_detail/elogd.csv`  | _final adme\_details data file with new RIF results_ |
+| `./timing_ELOGD.json` | _Store the processing time of each individual endpoint._ |
 | `./raw/` | _raw data from RIF pull without any processing_ |
 
 ## Logic Overview#
